@@ -55,17 +55,36 @@ Aplicación desarrollada con **Expo SDK 54** (React Native) y **TypeScript** que
 
 ## 📱 Generación del APK (para entrega)
 
-Para generar el archivo APK firmado, utiliza **EAS Build** (compilación en la nube):
+Para generar el archivo APK firmado, utiliza **EAS Build** (compilación en la nube). Sigue estos pasos exactamente como se muestran:
 
+1. **Instalar EAS CLI** (si no lo tienes):
 ```bash
-npm install -g eas-cli
-eas login
-eas init
-eas build:configure > Android
-eas build -p android --profile preview
+   npm install -g eas-cli
 ```
 
-El APK se descargará desde el enlace que proporciona EAS.
+2. **Iniciar sesión en Expo** (crea una cuenta si no tienes):
+```bash
+   eas login
+```
+   Esto abrirá un navegador para autenticarte.
+
+3. **Inicializar el proyecto con EAS:**
+```bash
+   eas init
+```
+   Cuando pregunte `"Would you like to create a project for ...?"` responde `Y` (yes).
+
+4. **Configurar EAS Build:**
+```bash
+   eas build:configure
+```
+   - Selecciona la plataforma **Android** (usando las flechas y Enter).
+   - El comando generará el archivo `eas.json` automáticamente.
+
+5. **Generar el APK:**
+```bash
+   eas build -p android --profile preview
+```
 
 ## 🧪 Pruebas realizadas
 
