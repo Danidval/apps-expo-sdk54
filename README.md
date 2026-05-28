@@ -85,6 +85,10 @@ Para generar el archivo APK firmado, utiliza **EAS Build** (compilación en la n
 ```bash
    eas build -p android --profile preview
 ```
+   Durante este paso:
+   - **Android application ID:** Se te pedirá que definas el identificador único de tu aplicación (por ejemplo, `com.devall01.CursosAppClean`). Este ID es el que usará Google Play para identificar tu app; no podrás cambiarlo después de publicar. Puedes aceptar el valor sugerido o escribir uno propio. Presiona Enter para continuar.
+   - **Keystore:** Luego preguntará `"Generate a new Android Keystore?"`. Responde `Y` (yes) para que EAS cree automáticamente un almacén de claves (keystore) y firme tu APK. Este keystore es necesario para firmar la aplicación y permitir su instalación en dispositivos Android.
+   - El proceso se ejecutará en la nube. Al finalizar, recibirás un enlace para descargar el archivo `.apk`.
 
 ## 🧪 Pruebas realizadas
 
