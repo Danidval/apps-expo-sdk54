@@ -61,6 +61,7 @@ Para generar el archivo APK firmado, utiliza **EAS Build** (compilación en la n
 npm install -g eas-cli
 eas login
 eas init
+eas build:configure > Android
 eas build -p android --profile preview
 ```
 
