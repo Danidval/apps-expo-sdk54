@@ -1,17 +1,21 @@
 {
   "expo": {
-    "name": "CursosAppClean",
+    "name": "Cursos",
     "slug": "CursosAppClean",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "cursosappclean",
-    "userInterfaceStyle": "automatic",
+    "scheme": "cursos",
+    "userInterfaceStyle": "light",
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundColor": "#E6F4FE"
-      }
+      },
+      "package": "com.devall01.cursos",
+      "permissions": [
+        "INTERNET"
+      ]
     },
     "web": {
       "output": "static",
@@ -27,7 +31,22 @@
           "resizeMode": "contain"
         }
       ],
-      "expo-secure-store"
-    ]
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "18b8f2e2-d2da-4316-982f-09fd1e007b06"
+      }
+    }
   }
 }
