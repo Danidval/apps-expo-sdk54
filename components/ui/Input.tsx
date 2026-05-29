@@ -6,5 +6,14 @@ export const Input = (props: TextInputProps) => {
 };
 
 const styles = StyleSheet.create({
-  input: { borderWidth: 1, borderColor: '#ddd', borderRadius: 8, padding: 12, marginBottom: 12, fontSize: 16, backgroundColor: '#fff' },
+  input: { 
+    borderWidth: 1, 
+    borderColor: '#ddd', 
+    borderRadius: 8, 
+    padding: 12, 
+    marginBottom: 12, 
+    fontSize: 16, 
+    backgroundColor: '#fff',
+    color: '#000000' // 👈 ¡AÑADE ESTA LÍNEA! Fuerza a que el texto sea siempre negro
+  },
 });
