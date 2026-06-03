@@ -4,9 +4,6 @@
  * Define la URL base y funciones para autenticación y CRUD de cursos.
  */
 
-// Importa Constants de Expo para acceder a variables de entorno (opcional, aquí no se usa directamente)
-import Constants from 'expo-constants';
-
 // ---------------------------------------------------------------------
 // Configuración de la URL base de la API
 // ---------------------------------------------------------------------
